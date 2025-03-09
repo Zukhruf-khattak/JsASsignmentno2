@@ -143,3 +143,79 @@ let gadgets = ["Phone", "Smartwatch", "Camera", "Speaker"]
 console.log(gadgets)
 gadgets.splice(2, 0, "Laptop", "Tablet") 
 console.log(gadgets) 
+
+
+// Chapter 18: For Loops
+
+// 18. Q1: Print numbers 1 to 10 using a loop.
+
+ for (let i = 0; i <= 10; i++) {
+    console.log(i) 
+ }
+
+// 19. Q2: Display subjects stored in an array using a loop.
+
+let loopofsubjects = ["Math", "Science", "English"];
+
+for (let i = 0; i < loopofsubjects.length; i++) {
+    console.log(loopofsubjects[i]);
+}
+
+// 20. Q3: Print the multiplication table of 5 using a loop.
+
+ for (let i = 0; i <= 10; i++) {
+         console.log(i + "*" + "5" + "=" + i*5)
+        
+ }
+
+
+// 21. Q4: Countdown from 10 to 1 using a loop.
+
+for (let i = 10; i>= 0; i-- ) {
+    console.log(i) 
+}
+
+// 22. Q5: Take five colors as user input, store them in an array, and display in the console.
+let colorus = [];
+
+for (let i = 0; i < 5; i++) {
+    colorus[i] = prompt("Enter a color:");
+}
+
+console.log(colorus);
+
+
+// 23. Q6:Declare an array of five numbers and display each number in the console. [ for loop]
+
+let numb = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < numb.length; i++) {
+    console.log(numb[i]);
+}
+
+
+// 24. Q7: Declare an array of five numbers and calculate their sum. Formula(sum += i) 
+
+let addition = [10, 20, 30, 40, 50];
+let sum = 0;
+
+for (let i = 0; i < addition.length; i++) {
+    sum += addition[i];  
+}
+
+console.log("Sum:", sum);
+
+
+// // bonus
+// 25. Q8: Find the largest number in an array.
+
+let maxnum = [10, 25, 50, 7, 90];
+let max = numbers[0];  
+
+for (let i = 1; i < maxnum.length; i++) {
+    if (maxnum[i] > max) {
+        max = maxnum[i];  
+    }
+}
+
+console.log("Largest number:", max);
